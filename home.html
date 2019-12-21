@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/home/index.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header-bottom">
+				<div class="left">
+					<div class="bottom"></div>
+				</div>
+				<div class="right">
+					<img src="img/home.png" />
+				</div>
+			</div>
+			<div class="cross"></div>
+		</div>
+		<div class="main">
+			<div class="travel">
+				<div class="image-content">
+					<img src="img/hot_air_balloon.png" />
+					<div class="image-describle">
+						土耳其
+						<div style="padding: 12px 0px 20px;font-weight: 600;">热气球</div>
+						<div>2030-3</div>
+					</div>
+				</div>
+				<div class="trval-link-content">
+					<div class="top">Travel show</div>
+					<div class="center">精彩瞬间</div>
+					<div class="link" id="trvalLink" >
+						<div style="position: relative; display: inline-block; width: 36px;;">
+							<div class="left-arrow"></div>
+							<div class="line"></div>
+						</div>
+						<a href="#" id="travel" onclick="changeLink('travel')">查看更多</a>
+					</div>
+				</div>
+			</div>
+			<div class="profile">
+				<div class="main">
+					<div>	
+					<img src="img/profile/my_photo.png" height="226px"/>
+					</div>
+					<div style="flex-grow: 1;background: rgb(233,235,239);height: 226px;">
+						<div style="padding:60px 52px 32px">我是黄珊珊</div>
+						<div style="padding:0px 52px 36px">我为自己代言<div>
+						<div class="profile-link-content">
+							<a href="#" id="profile" onclick="changeLink('profile')">查看更多</a>
+							<div style="display: inline-block;position: relative;">
+								<div class="right-line"></div>
+								<div class="right-arrow"></div>
+							</div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+			function changeLink(link){
+				window.parent.changeIframeSrc(link);
+			}
+		</script>
+	</body>	
+</html>
